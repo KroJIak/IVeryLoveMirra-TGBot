@@ -1,0 +1,33 @@
+{
+  "lang.countryflag": "\uD83C\uDDF7\uD83C\uDDFA",
+
+  "start.message": "Привет, %{}%! Я - бот, который поможет тебе не грустить, когда Андрея нет рядом ❤\uFE0F (потому что твой парень крутой программист и может себе позволить бота)",
+  "success.message": "Операция успешно выполнена.",
+  "error.message": "<b>[Ошибка]:</b> <span class=\"tg-spoiler\">%{}%</span>",
+  "unknown.command.message": "Неизвестная команда.",
+
+  "permissions.cancel": "well well well...",
+
+  "sad.alarm.1": "<b>\uD83D\uDEA8 ЗАПУСКАЕТСЯ СРОЧНАЯ ТРЕВОГА ⚠\uFE0F</b>",
+  "sad.alarm.2": "<b>Пишем Андрею...</b>",
+  "sad.alarm.3": "<b>Вызываем бригаду помощи...</b>",
+  "sad.alarm.4": "<b>Ищем самые лучшие пожелания...</b>",
+  "sad.alarm.andrey": "<b>\uD83D\uDEA8 АЛО ДУРАК, МИРРА ГРУСТИТ!!!!!! ⚠\uFE0F</b>",
+  "sad.success": "Надеюсь, ты теперь не грустишь)",
+
+  "compliment.message": "Ты самая %{}%!",
+
+  "iloveyou.message": "И я тебя люблю ❤\uFE0F",
+
+  "report.message": "Напиши жалобу и я отправлю ее Андрею:",
+  "report.send": "<b>Твоя госпожа возмущается:</b> %{}%",
+
+  "inlinebutton.left": "<<",
+  "inlinebutton.right": ">>",
+  "inlinebutton.empty": " ",
+  "inlinebutton.remove": "❌",
+
+  "button.sad": "\uD83D\uDE2D Мне грустно \uD83D\uDE22",
+  "button.report": "\uD83D\uDE21 Пожаловаться \uD83D\uDCDD",
+  "button.changelang": "%{}% Сменить язык %{}%"
+}

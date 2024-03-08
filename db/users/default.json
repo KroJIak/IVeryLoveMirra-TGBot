@@ -1,0 +1,17 @@
+{
+    "users": {
+        "0000000000": {
+            "username": "null",
+            "fullname": "null",
+            "lang": "null",
+            "permission": "null",
+            "mode": 0
+        }
+    },
+    "verifiedAccounts": [],
+    "permissions": {
+        "0": "default",
+        "1": "guest",
+        "2": "admin"
+    }
+}
