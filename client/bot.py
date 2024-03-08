@@ -18,7 +18,6 @@ logging.basicConfig(level=logging.INFO, filename=f'{const.commonPath}logs/{getLo
 dbUsers = getDBWorkerObject('users', const.mainPath, const.commonPath, databasePath=const.data.usersDatabasePath)
 dbAppeals = getDBWorkerObject('appeals', const.mainPath, const.commonPath, databasePath=const.data.appealsDatabasePath)
 dbLocal = getDBWorkerObject('local', const.mainPath, const.commonPath)
-ioLoop = asyncio.get_event_loop()
 bot = Bot(const.telegram.token)
 dp = Dispatcher()
 
@@ -191,24 +190,8 @@ async def mainHandler(message: types.Message):
         await ILoveYouHandler(userInfo, message)
         return
 
-async def notifyThread():
-    logging.info('Notify are enabled')
-    while True:
-        fullLocalTime = getFullLocalTime()
-        if dbLocal.getFlagNotify() and fullLocalTime % const.freqNotify == 0:
-            dbLocal.setFlagNofity(False)
-            await sendLovePack()
-            logging.info('LovePack has been sent')
-        elif not dbLocal.getFlagNotify() and fullLocalTime % const.freqNotify != 0:
-            dbLocal.setFlagNofity(True)
-        await asyncio.sleep(0.2)
-
 async def mainTelegram():
     await dp.start_polling(bot)
 
-def main():
-    ioLoop.create_task(notifyThread())
-    ioLoop.run_until_complete(mainTelegram())
-
 if __name__ == '__main__':
-    main()
+    asyncio.run(mainTelegram())

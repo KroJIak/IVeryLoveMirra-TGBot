@@ -49,7 +49,6 @@ class ConstPlenty():
         self.logging = Logging()
         self.alarmDuration = 3 * 60
         self.freqDuration = 10
-        self.freqNotify = 2.5 * 60 * 60
         self.ILoveYou = 'люблю тебя'
 
     def addConstFromConfig(self, config):
